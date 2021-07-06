@@ -1,0 +1,18 @@
+{% extends "blogs/base.html" %}
+{% block page_header %}
+  <div>
+    <h1>Groups</h1>
+  </div>
+{% endblock page_header %}
+
+{% block content %}
+  <div>
+    <ul>
+      {% for group in groups %}
+        <li><a href="{% url 'blogs:group' group.id %}">group</a></li>
+      {% empty %}
+        <p>This are the available groups in the forum.</p>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock content %}

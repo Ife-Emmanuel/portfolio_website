@@ -1,0 +1,3 @@
+portvenv
+__pycache__/
+*.sqlite3

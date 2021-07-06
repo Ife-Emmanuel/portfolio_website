@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <nav>
+    <h1>WeMeet</h1>
+    <a href="{% url 'blogs:homepage' %}">Homepage</a>
+    <a href="{% url 'blogs:groups' %}">Groups</a>
+  </nav>
+  <main>
+    <div>
+      {% block page_header %}{% endblock page_header %}
+    </div>
+    <div>
+      {% block content %}{% endblock content %}
+    </div>
+    <div>
+      {% block page_end %}
+        Invite your friends to use @WeMeet -- Know more about @WeMeet, click More/Help
+      {% endblock page_end %}
+    </div>
+
+  </main>
+
+
+</body>
+</html>
+
+<!--I need to alter things like the following later:-->
+<!-- title bar-->
+<!-- use bootstrap for proper styling-->
+<!--I also want to change the name of the project(new_blog) and app(blogs) to something like web_forum and forums-->
+<!--Also users should be able to create group(s)
+Each of the next page after each group should include members links like
+1 join group if you are not a member 2. total number of post to the group 3. number of daily post 4. members(total number of members) 4. Group_executive(name) 5. starmembers(members with highest activitye.g highest number of likes or comments-->
+<!--for the group creation; there should be different categories of groups that can be created..e.g alpha, beta, gamma and premium(with unlimited number of members)-->
+<!--It should have a voting platform and as well a conference section for members of the group-->
+<!--Group joining can be restricted to only purchase of a verification codes by the admin of the group.-->
+<!--Then members can engage in gamble games.-->
+
+
+<!--Then Emmanuel remember that you have to complete your school coursework and probably some machine learning, deep_learning and computer vision projects. Yes it is a possible goal Emmanuel, just go after it.-->
+
+<!--Things to learn for the project
+1. How to create a multifield form --then try using card class of bootstrap to
+display those things you have collected.. -->
